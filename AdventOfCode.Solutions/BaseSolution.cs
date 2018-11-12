@@ -18,9 +18,9 @@ namespace AdventOfCode.Solutions
         {
             var sb = new StringBuilder();
 
-            sb.AppendLine($"Day {Day}: {Title}");
-            sb.AppendLine($"Part 1 Answer: {GetPart1Answer()}");
-            sb.AppendLine($"Part 2 Answer: {GetPart2Answer()}");
+            sb.AppendLine($"Day {Day} | {Title}");
+            sb.AppendLine($"Solution Part 1: {GetPart1Answer()}");
+            sb.AppendLine($"Solution Part 2: {GetPart2Answer()}");
 
             return sb.ToString();
         }
@@ -29,9 +29,6 @@ namespace AdventOfCode.Solutions
 
         public abstract string GetPart2Answer();
 
-        protected string GetResourceString()
-        {
-            return Resources.ResourceManager.GetString($"Day{Day.ToString("D2")}");
-        }
+        protected string GetResourceString() => Resources.ResourceManager.GetString($"Day{Day.ToString("D2")}");
     }
 }

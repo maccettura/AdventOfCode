@@ -1,9 +1,15 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace AdventOfCode.Solutions
 {
     public class SolutionRepository
     {
+        public ISolution GetSolutionByDay(int day)
+        {
+            return GetAllSolutions().Single(x => x.Day == day);
+        }
+
         public IEnumerable<ISolution> GetAllSolutions()
         {
             yield return new Day01.Solution();
