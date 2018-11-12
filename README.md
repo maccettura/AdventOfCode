@@ -3,7 +3,7 @@ Base .NET Core project for Advent Of Code solutions
 
 ## To use
 
-Each day's solution will be implemented in the `Solution` class located in each day's respective folder. Each solution has two parts (methods) and they will return a string.
+Each day's solution will be implemented in the `Solution` class located in each day's respective folder.  The "day" integer property has already been filled out since that is known ahead of time, you will have to fill in the "title" since that is unknown until the day of. Each solution has two parts (methods) and they will return a string.
 
 Solution inputs are in the Resources.resx file, the keys are already there just replace the value with your own input.  The `BaseSolution` abstract class has a `GetResourceString()` method that will return the input as a string for you.
 
