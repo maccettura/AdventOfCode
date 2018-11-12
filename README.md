@@ -7,4 +7,4 @@ Each day's solution will be implemented in the `Solution` class located in each 
 
 Solution inputs are in the Resources.resx file, the keys are already there just replace the value with your own input.  The `BaseSolution` abstract class has a `GetResourceString()` method that will return the input as a string for you.
 
-To run, just run the `AdventOfCode.SolutionRunner` this will automatically iterate through all 25 days, giving both parts of the solution for each day (or displaying nothing if the solution has not been implemented).
+To run, just run the `AdventOfCode.SolutionRunner`.  By default this will iterate through all 25 days, but the repository has a method to get a specific day.  The `.ToString()` method of the solution will give both parts of the solution for each day (or displaying nothing if the solution has not been implemented).
