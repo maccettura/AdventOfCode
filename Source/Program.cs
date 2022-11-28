@@ -1,5 +1,7 @@
-﻿using AdventOfCode;
-using System;
+﻿global using AdventOfCode;
+global using AdventOfCode.Properties;
+global using System;
+global using System.Collections.Generic;
 
 const bool withStats = true;
 

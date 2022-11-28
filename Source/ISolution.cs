@@ -1,15 +1,14 @@
-﻿namespace AdventOfCode
+﻿namespace AdventOfCode;
+
+public interface ISolution
 {
-    public interface ISolution
-    {
-        int Day { get; }
+    int Day { get; }
 
-        string Title { get; }
+    string Title { get; }
 
-        string GetPart1Answer();
+    string GetPart1Answer();
 
-        string GetPart2Answer();
+    string GetPart2Answer();
 
-        void ConsoleDump(bool showDiagnostics = false);
-    }
+    void ConsoleDump(bool showDiagnostics = false);
 }

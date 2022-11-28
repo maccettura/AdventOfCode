@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace AdventOfCode.Day18;
+﻿namespace AdventOfCode.Day18;
 
 public class Solution : BaseSolution
 {
