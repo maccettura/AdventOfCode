@@ -2,8 +2,7 @@
 
 public static class SolutionRepository
 {
-    private static readonly List<ISolution> _allSolutions = new()
-    {
+    private static readonly List<ISolution> _allSolutions = [
         new Day01.Solution(),
         new Day02.Solution(),
         new Day03.Solution(),
@@ -29,7 +28,7 @@ public static class SolutionRepository
         new Day23.Solution(),
         new Day24.Solution(),
         new Day25.Solution()
-    };
+    ];
 
     public static ISolution GetSolutionByDay(int day)
     {

@@ -2,17 +2,11 @@
 
 namespace AdventOfCode;
 
-public abstract class BaseSolution : ISolution
+public abstract class BaseSolution(int day, string title) : ISolution
 {
-    protected BaseSolution(int day, string title)
-    {
-        Day = day;
-        Title = title;
-    }
+    public int Day { get; } = day;
 
-    public int Day { get; }
-
-    public string Title { get; }
+    public string Title { get; } = title;
 
     public abstract string GetPart1Answer();
 
